@@ -20,6 +20,11 @@
             <ToolBar>
                 <HBox>
                     <Button text="New..." onAction="#showNewItemDialog"/>
+                    <ToggleButton fx:id="filterToggleButton" text="Today's Items" onAction="#handleFilterButton">
+                        <tooltip>
+                            <Tooltip text="Button Down: Show today's items only. Button Up: Show All Items"/>
+                        </tooltip>
+                    </ToggleButton>
                 </HBox>
             </ToolBar>
         </VBox>
